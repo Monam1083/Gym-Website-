@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Membership Plans | FITNESS HUB</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="fixed-header">
+        <div class="container header-content">
+            <a href="index.html" class="logo">FITNESS HUB</a>
+            <nav class="desktop-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="trainers.html">Trainers</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="membership.html">Membership</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="calculator.html">Calculators & Diet</a></li>
+                </ul>
+            </nav>
+            <button class="hamburger" aria-label="Open menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+        <nav class="mobile-nav" aria-hidden="true">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="trainers.html">Trainers</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="membership.html">Membership</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="calculator.html">Calculators & Diet</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <div class="container">
+                <h1>Flexible Membership Plans</h1>
+                <p>Find the perfect plan to match your goals and lifestyle.</p>
+            </div>
+        </section>
+
+        <section class="membership-plans section-padding" id="membership">
+    <div class="container">
+        <h2 class="section-title">Our Membership Plans</h2>
+
+        <div class="membership-card-wrapper">
+            <!-- CARD 1 -->
+            <article class="m-card starter">
+                <div class="m-card-badge">Basic</div>
+                <h3>Starter</h3>
+                <p class="m-duration">1 Month</p>
+                <p class="m-price">4,999 PKR <span>/month</span></p>
+
+                <ul class="m-features">
+                    <li>Basic Gym Floor Access</li>
+                    <li>Free Group Classes (Weekday)</li>
+                    <li>Standard Locker Room Access</li>
+                    <li class="off">Personal Training Discount</li>
+                    <li class="off">Nutrition Consultation</li>
+                    <li class="off">Sauna & Steam Access</li>
+                </ul>
+
+                <a href="contact.html?plan=starter" class="btn btn-secondary">Join Now</a>
+            </article>
+
+            <!-- CARD 2 -->
+            <article class="m-card popular">
+                <div class="m-card-badge">Popular</div>
+                <h3>Standard</h3>
+                <p class="m-duration">3 Months</p>
+                <p class="m-price">4,499 PKR <span>/month</span></p>
+
+                <ul class="m-features">
+                    <li>All Gym Access + Classes</li>
+                    <li>1 Personal Session / Month</li>
+                    <li>Free Wi-Fi</li>
+                    <li>10% PT Discount</li>
+                    <li class="off">Nutrition Consultation</li>
+                    <li class="off">Sauna & Steam Access</li>
+                </ul>
+
+                <a href="contact.html?plan=standard" class="btn btn-primary">Join Now</a>
+            </article>
+
+            <!-- CARD 3 -->
+            <article class="m-card best">
+                <div class="m-card-badge">Best Value</div>
+                <h3>Pro</h3>
+                <p class="m-duration">6 Months</p>
+                <p class="m-price">3,999 PKR <span>/month</span></p>
+
+                <ul class="m-features">
+                    <li>All-Access Gym & Classes</li>
+                    <li>4 Personal Sessions / Month</li>
+                    <li>Free Wi-Fi, Parking</li>
+                    <li>1 Nutrition Consultation</li>
+                    <li>Sauna & Steam Discount (50%)</li>
+                    <li class="off">Priority Booking</li>
+                </ul>
+
+                <a href="contact.html?plan=pro" class="btn btn-primary">Join Now</a>
+            </article>
+
+            <!-- CARD 4 -->
+            <article class="m-card premium">
+                <div class="m-card-badge">Unlimited</div>
+                <h3>Premium</h3>
+                <p class="m-duration">12 Months</p>
+                <p class="m-price">5,999 PKR <span>/month</span></p>
+
+                <ul class="m-features">
+                    <li>All Pro Features +</li>
+                    <li>Unlimited Personal Training</li>
+                    <li>Full Sauna & Steam Access</li>
+                    <li>Dedicated Nutritionist</li>
+                    <li>Priority Class Booking</li>
+                    <li>Free Merchandise (1/year)</li>
+                </ul>
+
+                <a href="contact.html?plan=premium" class="btn btn-secondary">Join Now</a>
+            </article>
+        </div>
+    </div>
+</section>
+
+    </main>
+
+    <a href="https://wa.me/923148752727" target="_blank" rel="noopener" class="whatsapp-float" aria-label="Chat with us on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <footer class="fixed-footer">
+        <div class="container footer-grid">
+            <div class="footer-col about">
+                <h3>FITNESS HUB</h3>
+                <p>Leading the fitness revolution in Lahore with state-of-the-art facilities and expert trainers.</p>
+                <div class="social-icons">
+                    <a href="#" aria-label="Follow us on Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Follow us on Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="Follow us on Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="Connect with us on LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="footer-col links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="trainers.html">Trainers</a></li>
+                    <li><a href="membership.html">Membership</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-col hours">
+                <h3>Opening Hours</h3>
+                <p>Monday - Friday: 5:00 AM - 11:00 PM</p>
+                <p>Saturday: 6:00 AM - 10:00 PM</p>
+                <p>Sunday: 8:00 AM - 8:00 PM</p>
+            </div>
+            <div class="footer-col branches">
+                <h3>Our Lahore Branches</h3>
+                <address>
+                    <strong>Gulberg Branch:</strong><br>
+                    12-A, Main Boulevard, Gulberg II, Lahore<br>
+                    <a href="https://maps.app.goo.gl/placeholder1" target="_blank">View Map</a>
+                </address>
+                <address>
+                    <strong>DHA Branch:</strong><br>
+                    Plot 45, Phase V Commercial Area, DHA, Lahore<br>
+                    <a href="https://maps.app.goo.gl/placeholder2" target="_blank">View Map</a>
+                </address>
+                <address>
+                    <strong>Johar Town Branch:</strong><br>
+                    Near Shaukat Khanum Hospital, Johar Town, Lahore<br>
+                    <a href="https://maps.app.goo.gl/placeholder3" target="_blank">View Map</a>
+                </address>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 FITNESS HUB. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
+

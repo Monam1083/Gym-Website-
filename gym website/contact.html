@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | FITNESS HUB</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="fixed-header">
+        <div class="container header-content">
+            <a href="index.html" class="logo">FITNESS HUB</a>
+            <nav class="desktop-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="trainers.html">Trainers</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="membership.html">Membership</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="calculator.html">Calculators & Diet</a></li>
+                </ul>
+            </nav>
+            <button class="hamburger" aria-label="Open menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+        <nav class="mobile-nav" aria-hidden="true">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="trainers.html">Trainers</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="membership.html">Membership</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="calculator.html">Calculators & Diet</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contact-page-hero">
+            <div class="container">
+                <h1>We're Here to Help You!</h1>
+                <p>Reach out with any questions, sign-up inquiries, or feedback.</p>
+            </div>
+        </section>
+
+        <section class="contact-form-section section-padding" style="background-image: url('placeholder_contact_bg.jpg');">
+            <div class="container">
+                <div class="contact-card">
+                    <h2>Send Us a Message</h2>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="conFullName">Full Name <span aria-hidden="true">*</span></label>
+                            <input type="text" id="conFullName" name="fullName" required placeholder="Your Full Name">
+                        </div>
+                        <div class="form-group">
+                            <label for="conEmail">Email <span aria-hidden="true">*</span></label>
+                            <input type="email" id="conEmail" name="email" required placeholder="you@example.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="conPhone">Phone <span aria-hidden="true">*</span></label>
+                            <input type="tel" id="conPhone" name="phone" required placeholder="03xxxxxxxxx" pattern="[0-9]{11}" title="Phone number must be 11 digits">
+                        </div>
+                        <div class="form-group">
+                            <label for="conBranch">Preferred Branch <span aria-hidden="true">*</span></label>
+                            <select id="conBranch" name="branch" required>
+                                <option value="">Select a Branch</option>
+                                <option value="gulberg">Gulberg</option>
+                                <option value="defense">DHA Phase 5</option>
+                                <option value="johar">Johar Town</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="conPlan">Interested Plan</label>
+                            <select id="conPlan" name="plan">
+                                <option value="">Select a Plan (Optional)</option>
+                                <option value="starter">Starter</option>
+                                <option value="standard">Standard</option>
+                                <option value="pro">Pro</option>
+                                <option value="premium">Premium</option>
+                                <option value="elite">Elite (VIP)</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="conTime">Best Time to Call</label>
+                            <input type="text" id="conTime" name="bestTime" placeholder="e.g., After 5 PM">
+                        </div>
+                        <div class="form-group">
+                            <label for="conMessage">Message <span aria-hidden="true">*</span></label>
+                            <textarea id="conMessage" name="message" rows="4" required placeholder="How can we help you?"></textarea>
+                        </div>
+                        <div class="form-group checkbox-group">
+                            <input type="checkbox" id="conConsent" name="consent" required aria-required="true">
+                            <label for="conConsent">I consent to my data being processed according to the <a href="#" target="_blank">Privacy Policy</a>. <span aria-hidden="true">*</span></label>
+                        </div>
+                        <input type="hidden" name="utm_source" id="con_utm_source">
+                        <input type="hidden" name="utm_medium" id="con_utm_medium">
+                        <button type="submit" class="btn btn-primary">Submit Inquiry</button>
+                        <p id="contactMessage" class="form-message" aria-live="polite"></p>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="map-and-info section-padding bg-light">
+            <div class="container info-grid">
+                <div class="opening-hours">
+                    <h2><i class="fas fa-clock"></i> Gym Timings</h2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Day</th>
+                                <th>Hours</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>Monday</td><td>5:00 AM - 11:00 PM</td></tr>
+                            <tr><td>Tuesday</td><td>5:00 AM - 11:00 PM</td></tr>
+                            <tr><td>Wednesday</td><td>5:00 AM - 11:00 PM</td></tr>
+                            <tr><td>Thursday</td><td>5:00 AM - 11:00 PM</td></tr>
+                            <tr><td>Friday</td><td>5:00 AM - 11:00 PM</td></tr>
+                            <tr><td>Saturday</td><td>6:00 AM - 10:00 PM</td></tr>
+                            <tr><td>Sunday</td><td>8:00 AM - 8:00 PM</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="faq">
+                    <h2><i class="fas fa-question-circle"></i> Quick FAQ</h2>
+                    <ul class="quick-faq-list">
+                        <li><strong>Do you offer a trial?</strong> Yes, register on our homepage for a free 3-day trial.</li>
+                        <li><strong>Are personal trainers certified?</strong> Absolutely, all trainers are certified professionals.</li>
+                        <li><strong>Can I freeze my membership?</strong> Yes, members can freeze their plan for up to one month per year.</li>
+                    </ul>
+                </div>
+
+                <div class="map-embed-container">
+                    <h2><i class="fas fa-map-marker-alt"></i> Our Lahore Locations</h2>
+                    <p>Find us at one of our three conveniently located branches:</p>
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d108879.4629427339!2d74.19500662234053!3d31.5173719003889!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39190483e58107ad%3A0xa196aa099bf24e39!2sLahore%2C%20Punjab%2C%20Pakistan!5e0!3m2!1sen!2sus!4v1678881234567!5m2!1sen!2sus" 
+                        width="100%" 
+                        height="300" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy"
+                        title="Google Maps showing our locations in Lahore"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                    <ul class="branch-links">
+                        <li><a href="https://maps.app.goo.gl/placeholder1" target="_blank">Gulberg Branch Address & Map</a></li>
+                        <li><a href="https://maps.app.goo.gl/placeholder2" target="_blank">DHA Phase 5 Branch Address & Map</a></li>
+                        <li><a href="https://maps.app.goo.gl/placeholder3" target="_blank">Johar Town Branch Address & Map</a></li>
+                    </ul>
+                </div>
+
+                <div class="contact-details">
+                    <h2><i class="fas fa-info-circle"></i> General Information</h2>
+                    <p><strong>Email:</strong> <a href="mailto:info@fitnesshub.pk">info@fitnesshub.pk</a></p>
+                    <p><strong>Phone:</strong> <a href="tel:+924212345678">(042) 1234 5678</a></p>
+                    <div class="social-icons-contact">
+                        <a href="#" aria-label="Follow us on Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Follow us on Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Follow us on Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <a href="https://wa.me/923148752727" target="_blank" rel="noopener" class="whatsapp-float" aria-label="Chat with us on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <footer class="fixed-footer">
+        <div class="container footer-grid">
+            <div class="footer-col about">
+                <h3>FITNESS HUB</h3>
+                <p>Leading the fitness revolution in Lahore with state-of-the-art facilities and expert trainers.</p>
+                <div class="social-icons">
+                    <a href="#" aria-label="Follow us on Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Follow us on Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="Follow us on Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="Connect with us on LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="footer-col links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="trainers.html">Trainers</a></li>
+                    <li><a href="membership.html">Membership</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-col hours">
+                <h3>Opening Hours</h3>
+                <p>Monday - Friday: 5:00 AM - 11:00 PM</p>
+                <p>Saturday: 6:00 AM - 10:00 PM</p>
+                <p>Sunday: 8:00 AM - 8:00 PM</p>
+            </div>
+            <div class="footer-col branches">
+                <h3>Our Lahore Branches</h3>
+                <address>
+                    <strong>Gulberg Branch:</strong><br>
+                    12-A, Main Boulevard, Gulberg II, Lahore<br>
+                    <a href="https://maps.app.goo.gl/placeholder1" target="_blank">View Map</a>
+                </address>
+                <address>
+                    <strong>DHA Branch:</strong><br>
+                    Plot 45, Phase V Commercial Area, DHA, Lahore<br>
+                    <a href="https://maps.app.goo.gl/placeholder2" target="_blank">View Map</a>
+                </address>
+                <address>
+                    <strong>Johar Town Branch:</strong><br>
+                    Near Shaukat Khanum Hospital, Johar Town, Lahore<br>
+                    <a href="https://maps.app.goo.gl/placeholder3" target="_blank">View Map</a>
+                </address>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 FITNESS HUB. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
+

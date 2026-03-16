@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+
+<!-- Register Button -->
+<button class="register-btn" id="openFormBtn">Register Now</button>
+
+<!-- Registration Popup -->
+<div class="popup-overlay" id="popupOverlay">
+    <div class="popup-box">
+
+        <span class="close-btn" id="closeFormBtn">&times;</span>
+
+        <h2>Gym Registration Form</h2>
+
+        <form id="gymForm">
+            <div class="form-group">
+                <label>Full Name</label>
+                <input type="text" id="name" required>
+            </div>
+
+            <div class="form-group">
+                <label>Email</label>
+                <input type="email" id="email" required>
+            </div>
+
+            <div class="form-group">
+                <label>Phone Number</label>
+                <input type="tel" id="phone" required>
+            </div>
+
+            <div class="form-group">
+                <label>Membership Plan</label>
+                <select id="plan" required>
+                    <option value="">Select Plan</option>
+                    <option value="Monthly">Monthly</option>
+                    <option value="Quarterly">Quarterly</option>
+                    <option value="Yearly">Yearly</option>
+                </select>
+            </div>
+
+            <button type="submit" class="submit-btn">Submit</button>
+        </form>
+
+    </div>
+</div>
+
+</body>
+</html>

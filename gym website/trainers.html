@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Expert Trainers | FITNESS HUB</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="fixed-header">
+        <div class="container header-content">
+            <a href="index.html" class="logo">FITNESS HUB</a>
+            <nav class="desktop-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="trainers.html">Trainers</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="membership.html">Membership</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="calculator.html">Calculators & Diet</a></li>
+                </ul>
+            </nav>
+            <button class="hamburger" aria-label="Open menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+        <nav class="mobile-nav" aria-hidden="true">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="trainers.html">Trainers</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="membership.html">Membership</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="calculator.html">Calculators & Diet</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <div class="container">
+                <h1>Meet Our Certified Coaches</h1>
+                <p>Highly qualified and passionate trainers dedicated to your success.</p>
+            </div>
+        </section>
+
+        <section class="trainers-list section-padding">
+            <div class="container">
+                <div class="trainer-filter">
+                    <label for="specializationFilter">Filter by Specialization:</label>
+                    <select id="specializationFilter" aria-label="Filter trainers by specialization">
+                        <option value="all">All Specializations</option>
+                        <option value="strength">Strength & Conditioning</option>
+                        <option value="weightloss">Weight Loss & Nutrition</option>
+                        <option value="rehab">Rehabilitation & Mobility</option>
+                        <option value="yoga">Yoga & Pilates</option>
+                    </select>
+                </div>
+
+                <div class="trainer-grid">
+                    <article class="trainer-card" data-specialization="strength weightloss">
+                        <img src="m1.png" alt="Photo of Trainer Ahmed Khan" class="trainer-photo">
+                        <h3>Ahmed Khan</h3>
+                        <p class="specialization">Strength & Conditioning, Weight Loss</p>
+                        <div class="certifications">
+                            <span class="badge" aria-label="Certified Strength and Conditioning Specialist">CSCS</span>
+                            <span class="badge" aria-label="Certified in CPR/AED">CPR/AED</span>
+                        </div>
+                        <p class="bio">Ahmed is a veteran coach with 10+ years experience, specializing in muscle gain and powerlifting techniques. His personalized approach guarantees measurable results.</p>
+                        <p class="timings"><strong>Available:</strong> Mon-Fri, 6:00 AM - 2:00 PM</p>
+                        <a href="contact.html?trainer=ahmed" class="btn btn-secondary">Book a Session</a>
+                    </article>
+
+                    <article class="trainer-card" data-specialization="weightloss rehab">
+                        <img src="t1.png" alt="Photo of Trainer Sana Tariq" class="trainer-photo">
+                        <h3>Sana Tariq</h3>
+                        <p class="specialization">Weight Loss & Nutrition, Rehabilitation</p>
+                        <div class="certifications">
+                            <span class="badge" aria-label="National Academy of Sports Medicine Certified Personal Trainer">NASM-CPT</span>
+                            <span class="badge" aria-label="Precision Nutrition Certified">PN-L1</span>
+                        </div>
+                        <p class="bio">Sana focuses on holistic wellness, combining tailored nutrition plans with safe, effective workouts for sustainable weight management and injury recovery.</p>
+                        <p class="timings"><strong>Available:</strong> Tue-Sat, 11:00 AM - 7:00 PM</p>
+                        <a href="contact.html?trainer=sana" class="btn btn-secondary">Book a Session</a>
+                    </article>
+
+                    <article class="trainer-card" data-specialization="yoga rehab">
+                        <img src="m1 (2).png" alt="Photo of Trainer Omar Malik" class="trainer-photo">
+                        <h3>Omar Malik</h3>
+                        <p class="specialization">Yoga Master, Mobility Specialist</p>
+                        <div class="certifications">
+                            <span class="badge" aria-label="Registered Yoga Teacher 500 hours">RYT-500</span>
+                            <span class="badge" aria-label="First Aid Certified">First Aid</span>
+                        </div>
+                        <p class="bio">Omar brings tranquility and focus, guiding clients through Vinyasa and restorative practices to improve posture, flexibility, and mental clarity.</p>
+                        <p class="timings"><strong>Available:</strong> Mon, Wed, Fri: 5:00 PM - 10:00 PM</p>
+                        <a href="contact.html?trainer=omar" class="btn btn-secondary">Book a Session</a>
+                    </article>
+
+                    <article class="trainer-card" data-specialization="strength">
+                        <img src="t2.png" alt="Photo of Trainer Fatima Rizvi" class="trainer-photo">
+                        <h3>Fatima Rizvi</h3>
+                        <p class="specialization">CrossFit & High-Intensity Training</p>
+                        <div class="certifications">
+                            <span class="badge" aria-label="CrossFit Level 1 Trainer">CF-L1</span>
+                            <span class="badge" aria-label="Certified Strength and Conditioning Specialist">CSCS</span>
+                        </div>
+                        <p class="bio">Fatima is our high-energy coach specializing in functional fitness and high-intensity interval training (HIIT). Expect fast-paced, challenging, and rewarding workouts!</p>
+                        <p class="timings"><strong>Available:</strong> Tue, Thu, Sat: 7:00 AM - 1:00 PM</p>
+                        <a href="contact.html?trainer=fatima" class="btn btn-secondary">Book a Session</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <a href="https://wa.me/923148752727" target="_blank" rel="noopener" class="whatsapp-float" aria-label="Chat with us on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <footer class="fixed-footer">
+        <div class="container footer-grid">
+            <div class="footer-col about">
+                <h3>FITNESS HUB</h3>
+                <p>Leading the fitness revolution in Lahore with state-of-the-art facilities and expert trainers.</p>
+                <div class="social-icons">
+                    <a href="#" aria-label="Follow us on Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Follow us on Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="Follow us on Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="Connect with us on LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="footer-col links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="trainers.html">Trainers</a></li>
+                    <li><a href="membership.html">Membership</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-col hours">
+                <h3>Opening Hours</h3>
+                <p>Monday - Friday: 5:00 AM - 11:00 PM</p>
+                <p>Saturday: 6:00 AM - 10:00 PM</p>
+                <p>Sunday: 8:00 AM - 8:00 PM</p>
+            </div>
+            <div class="footer-col branches">
+                <h3>Our Lahore Branches</h3>
+                <address>
+                    <strong>Gulberg Branch:</strong><br>
+                    12-A, Main Boulevard, Gulberg II, Lahore<br>
+                    <a href="https://maps.app.goo.gl/placeholder1" target="_blank">View Map</a>
+                </address>
+                <address>
+                    <strong>DHA Branch:</strong><br>
+                    Plot 45, Phase V Commercial Area, DHA, Lahore<br>
+                    <a href="https://maps.app.goo.gl/placeholder2" target="_blank">View Map</a>
+                </address>
+                <address>
+                    <strong>Johar Town Branch:</strong><br>
+                    Near Shaukat Khanum Hospital, Johar Town, Lahore<br>
+                    <a href="https://maps.app.goo.gl/placeholder3" target="_blank">View Map</a>
+                </address>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 FITNESS HUB. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
+

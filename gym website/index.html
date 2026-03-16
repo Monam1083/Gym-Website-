@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FITNESS HUB | Achieve Your Peak Performance</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Poppins:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <header class="fixed-header">
+        <div class="container header-content">
+            <a href="index.html" class="logo">FITNESS HUB</a>
+            <nav class="desktop-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="trainers.html">Trainers</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="membership.html">Membership</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="calculator.html">Calculators & Diet</a></li>
+                </ul>
+            </nav>
+            <button class="hamburger" aria-label="Open menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+        <nav class="mobile-nav" aria-hidden="true">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="trainers.html">Trainers</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="membership.html">Membership</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="calculator.html">Calculators & Diet</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" id="home">
+            <div class="hero-overlay"></div>
+            <div class="container hero-content">
+                <div class="hero-text">
+                    <h1>Unleash Your Potential</h1>
+                    <p class="tagline">The ultimate fitness experience tailored for you in the heart of Lahore.</p>
+                    <div class="cta-buttons">
+                        <a href="membership.html#membership" class="btn btn-primary">Membership</a>
+                        
+                    </div>
+                </div>
+                <div class="hero-image-container">
+                    <img src="tilt.png" alt="Tilted image of high-quality gym equipment" class="hero-image">
+                </div>
+            </div>
+        </section>
+
+        <section class="process-cards section-padding bg-light">
+            <div class="container">
+                <h2 class="section-title">Our 4-Step Journey to Success</h2>
+                <div class="card-grid">
+                    <div class="process-card">
+                        <i class="fas fa-search"></i>
+                        <h3>Assess</h3>
+                        <p>Analyze your current fitness level and set realistic, measurable goals.</p>
+                    </div>
+                    <div class="process-card">
+                        <i class="fas fa-dumbbell"></i>
+                        <h3>Train</h3>
+                        <p>Follow a personalized training program designed by certified professionals.</p>
+                    </div>
+                    <div class="process-card">
+                        <i class="fas fa-chart-line"></i>
+                        <h3>Track</h3>
+                        <p>Monitor your progress with regular check-ins and performance tracking.</p>
+                    </div>
+                    <div class="process-card">
+                        <i class="fas fa-trophy"></i>
+                        <h3>Succeed</h3>
+                        <p>Achieve your goals and celebrate your lasting transformation.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="counters-section section-padding">
+            <div class="container">
+                <div class="counter-grid">
+                    <div class="counter-item">
+                        <i class="fas fa-users"></i>
+                        <span class="counter" data-target="2500">0</span>+
+                        <h4>Happy Clients</h4>
+                    </div>
+                    <div class="counter-item">
+                        <i class="fas fa-cogs"></i>
+                        <span class="counter" data-target="120">0</span>+
+                        <h4>Modern Machines</h4>
+                    </div>
+                    <div class="counter-item">
+                        <i class="fas fa-city"></i>
+                        <span class="counter" data-target="3">0</span>
+                        <h4>Branches in Lahore</h4>
+                    </div>
+                    <div class="counter-item">
+                        <i class="fas fa-user-tie"></i>
+                        <span class="counter" data-target="25">0</span>
+                        <h4>Expert Trainers</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="equipment-carousel-section section-padding bg-light">
+            <div class="container">
+                <h2 class="section-title">State-of-the-Art Equipment</h2>
+                <div class="carousel-container">
+                    <button class="carousel-nav prev" aria-label="Previous slide"><i
+                            class="fas fa-chevron-left"></i></button>
+                    <div class="carousel-track">
+                        <div class="carousel-slide">
+                            <img src="treadmill.png" alt="Modern commercial treadmill">
+                            <p>High-End Treadmills</p>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="dumbels.png" alt="Rack of dumbbells and free weights">
+                            <p>Premium Free Weights</p>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="cross.png" alt="Multi-functional cable crossover machine">
+                            <p>Cable Crossover Machines</p>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="groupyoga.png" alt="Dedicated yoga and stretching studio">
+                            <p>Dedicated Studio Spaces</p>
+                        </div>
+                    </div>
+                    <button class="carousel-nav next" aria-label="Next slide"><i
+                            class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </section>
+
+        <section class="community-section section-padding">
+            <div class="container content-two-col">
+                <div class="content-image">
+                    <img src="gt1.png" alt="Group of diverse people working out together">
+                </div>
+                <div class="content-text">
+                    <h2>Community Cares</h2>
+                    <p>We're more than just a gym; we're a supportive community. We host monthly charity drives, group
+                        classes for local outreach, and special events to promote wellness across Lahore. Join us in
+                        making a difference, both inside and outside the gym.</p>
+                    <a href="services.html" class="btn btn-secondary">See Group Classes</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="pt-section section-padding bg-light">
+            <div class="container content-two-col reverse">
+                <div class="content-image">
+                    <img src="train2.png" alt="Personal trainer guiding a client through a lifting exercise">
+                </div>
+                <div class="content-text">
+                    <h2>Personalized Training</h2>
+                    <p>Unlock your full potential with our certified one-on-one personal training. Get custom workout
+                        plans, expert form correction, and the accountability you need to reach ambitious goals. Our
+                        packages cover strength, weight loss, and rehabilitation.</p>
+                    <a href="trainers.html" class="btn btn-primary">Meet Our Trainers</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="amenities-section section-padding">
+            <div class="container">
+                <h2 class="section-title">Premium Amenities for Your Comfort</h2>
+                <div class="amenities-grid">
+                    <div class="amenity-item">
+                        <img src="room.png" alt="Interior of a relaxing sauna room">
+                        <h3>Sauna & Steam Room</h3>
+                        <p>Relax and recover with heat therapy after an intense workout session.</p>
+                    </div>
+                    <div class="amenity-item">
+                        <img src="lockers.png" alt="Clean and spacious locker room with benches">
+                        <h3>Secure Locker Rooms</h3>
+                        <p>Spacious, clean, and secure changing and locker facilities.</p>
+                    </div>
+                    <div class="amenity-item">
+                        <img src="parking.png" alt="Empty parking lot with reserved spaces">
+                        <h3>Free Parking</h3>
+                        <p>Hassle-free, dedicated parking space for our valued members.</p>
+                    </div>
+                    <div class="amenity-item">
+                        <img src="bar.png" alt="Counter of a healthy juice and smoothie bar">
+                        <h3>Juice Bar</h3>
+                        <p>Freshly prepared smoothies, protein shakes, and healthy snacks.</p>
+                    </div>
+                    <div class="amenity-item">
+                        <img src="wifi.png" alt="Wi-Fi symbol icon on a modern display">
+                        <h3>High-Speed Wi-Fi</h3>
+                        <p>Stay connected while you work out or relax in our lounge areas.</p>
+                    </div>
+                    <div class="amenity-item">
+                        <img src="grouptrain.png" alt="People participating in a high-intensity group class">
+                        <h3>Group Studio Access</h3>
+                        <p>Unlimited access to all group exercise and spinning studios.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonials-section section-padding bg-light">
+            <div class="container">
+                <h2 class="section-title">What Our Members Say</h2>
+                <div class="testimonials-carousel">
+                    <div class="testimonial-card">
+                        <img src="train1.png" alt="Photo of client Sara Khan">
+                        <div class="stars" aria-label="5 star rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="quote">"The trainers here are incredible. I hit my weight loss goal faster than I ever
+                            thought possible!"</p>
+                        <p class="client-name">- Sara Khan</p>
+                    </div>
+                    <div class="testimonial-card">
+                        <img src="m1 (2).png" alt="Photo of client Ali Sheikh">
+                        <div class="stars" aria-label="4 star rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="far fa-star"></i>
+                        </div>
+                        <p class="quote">"Clean facility and excellent equipment. The community classes are a huge
+                            bonus."</p>
+                        <p class="client-name">- Ali Sheikh</p>
+                    </div>
+                    <div class="testimonial-card">
+                        <img src="c1 (2).png" alt="Photo of client Beenish Tariq">
+                        <div class="stars" aria-label="5 star rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="quote">"The best gym environment in Lahore. Highly professional and welcoming to all
+                            fitness levels."</p>
+                        <p class="client-name">- Beenish Tariq</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="tips-tricks-section section-padding">
+            <div class="container">
+                <h2 class="section-title">Quick Trips & Tricks</h2>
+                <div class="card-grid">
+                    <div class="tip-card" role="button" tabindex="0">
+                        <i class="fas fa-hand-rock"></i>
+                        <h3>Gym Hacks</h3>
+                        <p>Learn 5 simple ways to maximize your recovery time for faster gains.</p>
+                        <a href="blog.html#post-gym-hacks" class="read-more">View Tip</a>
+                    </div>
+                    <div class="tip-card" role="button" tabindex="0">
+                        <i class="fas fa-bolt"></i>
+                        <h3>Workout Tips</h3>
+                        <p>The secret to a perfect squat: focus on depth, not just weight.</p>
+                        <a href="blog.html#post-workout-tips" class="read-more">View Tip</a>
+                    </div>
+                    <div class="tip-card" role="button" tabindex="0">
+                        <i class="fas fa-fire"></i>
+                        <h3>Short Challenges</h3>
+                        <p>Try our 7-day plank challenge to build a rock-solid core!</p>
+                        <a href="blog.html#post-challenges" class="read-more">View Challenge</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="blog-teasers section-padding bg-light">
+            <div class="container">
+                <h2 class="section-title">Scientific Insights from Our Blog</h2>
+                <div class="blog-grid">
+                    <article class="blog-post-teaser">
+                        <img src="muscles.png" alt="Scientific diagram of muscle fibers">
+                        <h3>The Science of Hypertrophy</h3>
+                        <p>An excerpt on how resistance training stimulates muscle growth and the optimal rep ranges...
+                        </p>
+                        <a href="https://www.anytimefitness.co.in/blog/" class="btn btn-secondary">Read More</a>
+                    </article>
+                    <article class="blog-post-teaser">
+                        <img src="diet1.png" alt="Overhead shot of a balanced healthy meal">
+                        <h3>Protein Intake & Recovery</h3>
+                        <p>Research-backed recommendations for protein timing and quantity to aid post-workout
+                            recovery...</p>
+                        <a href="https://blog.nasm.org/" class="btn btn-secondary">Read More</a>
+                    </article>
+                    <article class="blog-post-teaser">
+                        <img src="heart.png"
+                            alt="Heart rate monitor screen displaying high intensity interval training">
+                        <h3>Benefits of HIIT vs. LISS</h3>
+                        <p>A comparison of High-Intensity Interval Training and Low-Intensity Steady State cardio for
+                            fat loss...</p>
+                        <a href="https://gympassport.pk/blogs" class="btn btn-secondary">Read More</a>
+                    </article>
+                </div>
+                <div class="text-center" style="margin-top: 2rem;">
+                    <a href="blog.html" class="btn btn-primary">View All Blog Posts</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="footer-cta section-padding">
+            <div class="container">
+                <h2>Ready to Start Your Fitness Journey?</h2>
+                <p>Join FITNESS HUB today and experience the difference professional guidance makes.</p>
+                <a href="membership.html#membership" class="btn btn-primary">See All Plans</a>
+                <a href="contact.html" class="btn btn-secondary">Get in Touch</a>
+            </div>
+        </section>
+    </main>
+
+    <div id="registrationModal" class="modal" aria-modal="true" role="dialog" aria-labelledby="modalTitle">
+        <div class="modal-content">
+            <span class="close-btn" id="closeModalBtn" aria-label="Close registration form">&times;</span>
+            <h2 id="modalTitle">Start Your Free Trial!</h2>
+            <form id="registrationForm">
+                <div class="form-group">
+                    <label for="regFullName">Full Name <span aria-hidden="true">*</span></label>
+                    <input type="text" id="regFullName" name="fullName" required aria-required="true"
+                        placeholder="Enter your full name">
+                </div>
+                <div class="form-group">
+                    <label for="regEmail">Email <span aria-hidden="true">*</span></label>
+                    <input type="email" id="regEmail" name="email" required aria-required="true"
+                        placeholder="you@example.com">
+                </div>
+                <div class="form-group">
+                    <label for="regPhone">Phone <span aria-hidden="true">*</span></label>
+                    <input type="tel" id="regPhone" name="phone" required aria-required="true" placeholder="03xxxxxxxxx"
+                        pattern="[0-9]{11}" title="Phone number must be 11 digits">
+                </div>
+                <div class="form-group">
+                    <label for="regBranch">Branch Preference <span aria-hidden="true">*</span></label>
+                    <select id="regBranch" name="branch" required aria-required="true">
+                        <option value="">Select a Branch</option>
+                        <option value="gulberg">Gulberg</option>
+                        <option value="defense">DHA Phase 5</option>
+                        <option value="johar">Johar Town</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="regPlan">Interested Plan</label>
+                    <select id="regPlan" name="plan">
+                        <option value="">Select a Plan (Optional)</option>
+                        <option value="starter">Starter</option>
+                        <option value="standard">Standard</option>
+                        <option value="pro">Pro</option>
+                        <option value="premium">Premium</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="regPassword">Password (Optional)</label>
+                    <input type="password" id="regPassword" name="password" placeholder="Create a password">
+                </div>
+                <div class="form-group checkbox-group">
+                    <input type="checkbox" id="regGDPR" name="gdpr" required aria-required="true">
+                    <label for="regGDPR">I agree to the <a href="#" target="_blank">Privacy Policy</a> and consent to
+                        communication. <span aria-hidden="true">*</span></label>
+                </div>
+                <input type="hidden" name="utm_source" id="utm_source">
+                <input type="hidden" name="utm_medium" id="utm_medium">
+                <button type="submit" class="btn btn-primary">Submit Registration</button>
+                <p id="regMessage" class="form-message" aria-live="polite"></p>
+            </form>
+        </div>
+    </div>
+
+    <a href="https://wa.me/923148752727" target="_blank" rel="noopener" class="whatsapp-float"
+        aria-label="Chat with us on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <footer class="fixed-footer">
+        <div class="container footer-grid">
+            <div class="footer-col about">
+                <h3>FITNESS HUB</h3>
+                <p>Leading the fitness revolution in Lahore with state-of-the-art facilities and expert trainers.</p>
+                <div class="social-icons">
+                    <a href="#" aria-label="Follow us on Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Follow us on Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="Follow us on Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="Connect with us on LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="footer-col links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="trainers.html">Trainers</a></li>
+                    <li><a href="membership.html">Membership</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-col hours">
+                <h3>Opening Hours</h3>
+                <p>Monday - Friday: 5:00 AM - 11:00 PM</p>
+                <p>Saturday: 6:00 AM - 10:00 PM</p>
+                <p>Sunday: 8:00 AM - 8:00 PM</p>
+            </div>
+            <div class="footer-col branches">
+                <h3>Our Lahore Branches</h3>
+                <address>
+                    <strong>Gulberg Branch:</strong><br>
+                    12-A, Main Boulevard, Gulberg II, Lahore<br>
+                    <a href="https://maps.app.goo.gl/wbNyDL3JvBVaCMHg7" target="_blank">View Map</a>
+                </address>
+                <address>
+                    <strong>DHA Branch:</strong><br>
+                    Plot 45, Phase V Commercial Area, DHA, Lahore<br>
+                    <a href="https://maps.app.goo.gl/placeholder2" target="_blank">View Map</a>
+                </address>
+                <address>
+                    <strong>Johar Town Branch:</strong><br>
+                    Near Shaukat Khanum Hospital, Johar Town, Lahore<br>
+                    <a href="https://maps.app.goo.gl/placeholder3" target="_blank">View Map</a>
+                </address>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 FITNESS HUB. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
